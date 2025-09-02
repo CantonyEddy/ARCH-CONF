@@ -1,8 +1,9 @@
 #!/bin/bash
-# ====================================================
+# ===========================================================
 # Script d’installation des fichiers de configuration
 # ARCH-CONF – Arch Linux + Hyprland
-# ====================================================
+# Placer vous dans le dossier parent du repo avant d’exécuter
+# ===========================================================
 
 set -e  # Stoppe en cas d’erreur
 REPO_DIR="$(pwd)/ARCH-CONF"
