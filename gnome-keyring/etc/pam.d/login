@@ -1,0 +1,3 @@
+# ajoute avant la ligne pam_unix.so
+#auth       optional     pam_gnome_keyring.so
+#session    optional     pam_gnome_keyring.so auto_start

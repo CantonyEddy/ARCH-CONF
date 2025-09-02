@@ -1,0 +1,33 @@
+# ==============================
+#   Yazi configuration minimale
+# ==============================
+
+[manager]
+# Nombre de colonnes visibles (1 = simple liste, 2 ou 3 = panels façon ranger)
+ratio = [1, 2, 3]
+
+# Taille minimum d’une colonne
+min_ratio = 10
+
+# Icônes nerd font → nécessite Hack Nerd Font (déjà prévu dans ton setup)
+show_hidden = true    # Afficher fichiers/dossiers cachés (Ctrl+h toggle)
+sort_by = "name"      # Tri par nom (options: name, size, modified, ext)
+sort_dir_first = true # Toujours afficher les dossiers avant les fichiers
+
+[preview]
+# Activer aperçu fichiers
+wrap = true           # Retour à la ligne pour éviter le débordement
+tab_size = 4          # Largeur tabulations
+max_width = 600       # Largeur max de l’aperçu
+max_height = 400      # Hauteur max de l’aperçu
+cache = true          # Mise en cache des previews
+
+[theme]
+# Thème Tokyo Night (adapté à ton setup global)
+foreground = "#c0caf5"
+background = "#1a1b26"
+cursor     = "#7aa2f7"
+selection  = "#33467c"
+directory  = "#7dcfff"
+symlink    = "#bb9af7"
+executable = "#9ece6a"

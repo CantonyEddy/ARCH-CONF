@@ -1,0 +1,32 @@
+# ==============================
+# ~/.config/dunst/dunstrc
+# Configuration de base Dunst
+# ==============================
+
+[global]
+    monitor = 0                 # Écran utilisé (0 = premier écran détecté)
+    follow = keyboard           # Les notifs suivent le focus clavier
+    geometry = "300x50-20+20"   # Taille & position (LxH-X+Y) : ici 300px de large, 50px de haut, 20px du coin droit, 20px du haut
+    transparency = 10           # Transparence (0 = opaque, 100 = invisible)
+    frame_color = "#7aa2f7"     # Couleur de la bordure (Tokyo Night bleu clair)
+    frame_width = 2             # Épaisseur de la bordure
+    separator_height = 2        # Espace entre notifs
+    padding = 8                 # Marges internes
+    horizontal_padding = 8
+    font = Hack Nerd Font 11    # Police (Hack Nerd Font qu’on a installée)
+
+[urgency_low]
+    background = "#1a1b26"      # Fond sombre
+    foreground = "#c0caf5"      # Texte clair
+    timeout = 5                 # Durée d’affichage (sec)
+
+[urgency_normal]
+    background = "#1a1b26"
+    foreground = "#c0caf5"
+    timeout = 8
+
+[urgency_critical]
+    background = "#1a1b26"
+    foreground = "#f7768e"      # Rouge vif pour notifs critiques
+    frame_color = "#f7768e"
+    timeout = 0                 # Pas de timeout (reste jusqu’à fermeture manuelle)

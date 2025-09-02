@@ -1,0 +1,46 @@
+{
+    // ==============================
+    //   Fastfetch configuration
+    // ==============================
+
+    "logo": "arch",              // Logo ASCII affiché (ici Arch Linux)
+    "logoColor": "blue",         // Couleur du logo (blue = Arch Blue)
+
+    // ---- General layout ----
+    "display": {
+        "separator": " : ",      // Séparateur clé/valeur
+        "paddingLeft": 2,        // Décalage à gauche (meilleur rendu)
+        "keyWidth": 14           // Largeur colonne gauche (alignement)
+    },
+
+    // ---- Modules à afficher ----
+    "modules": [
+        "os",                    // Distribution (Arch Linux)
+        "kernel",                // Version du noyau
+        "uptime",                // Durée depuis le boot
+        "packages",              // Nombre de paquets installés
+        "shell",                 // Shell utilisé (zsh)
+        "terminal",              // Terminal (WezTerm par ex.)
+        "cpu",                   // Infos CPU
+        "gpu",                   // Infos GPU
+        "memory",                // RAM utilisée/totale
+        "disk",                  // Utilisation disque (/)
+        "battery",               // Batterie (si portable)
+        "wm",                    // Gestionnaire de fenêtres (Hyprland)
+        "de",                    // Desktop Environment (vide → N/A)
+        "theme",                 // Thème GTK (si dispo)
+        "icons",                 // Pack d’icônes (si dispo)
+        "font",                  // Police en cours (Hack Nerd Font)
+        "localIp",               // IP locale
+        "publicIp"               // IP publique (si réseau OK)
+    ],
+
+    // ---- Affichage couleurs ----
+    "color": {
+        "keys": "cyan",          // Couleur des noms de modules
+        "values": "white"        // Couleur des valeurs
+    }
+}
+    // ==============================
+    //   End of configuration
+    // ==============================

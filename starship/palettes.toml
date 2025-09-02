@@ -1,0 +1,15 @@
+# -------------------------------------------------------------------
+# Fichier : ~/.config/starship/palettes.toml
+# Rôle   : Définition de la palette Tokyo Night pour Starship
+# Source : adaptée du thème "tokyonight"
+# -------------------------------------------------------------------
+
+[palettes.tokyo-night]
+black   = '#1a1b26'
+red     = '#f7768e'
+green   = '#9ece6a'
+yellow  = '#e0af68'
+blue    = '#7aa2f7'
+magenta = '#ad8ee6'
+cyan    = '#449dab'
+white   = '#787c99'

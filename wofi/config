@@ -1,0 +1,26 @@
+# ================================
+# ~/.config/wofi/config
+# Config minimaliste pour Wofi
+# ================================
+
+# Mode par défaut : dmenu (plus simple que drun)
+mode=drun
+
+# Largeur et hauteur de la fenêtre
+width=600
+height=400
+
+# Alignement de la fenêtre
+location=center
+
+# Taille des lignes (utile pour lisibilité)
+prompt=Search...
+
+# Utiliser la casse insensible
+case-insensitive=true
+
+# Trie alphabétique des résultats
+allow-images=true
+
+# Fermer Wofi quand on sélectionne une app
+hide-scroll=true

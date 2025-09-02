@@ -1,0 +1,56 @@
+/* ================================
+   ~/.config/waybar/style.css
+   Thème simple inspiré Tokyo Night
+   ================================ */
+
+/* Couleurs de base */
+@define-color bg    #1a1b26;  /* Fond sombre */
+@define-color fg    #c0caf5;  /* Texte clair */
+@define-color blue  #7aa2f7;  /* Accents */
+@define-color cyan  #449dab;  /* Accents secondaires */
+@define-color red   #f7768e;  /* Alerte */
+
+/* Barre générale */
+#waybar {
+  background: alpha(@bg, 0.85);  /* Légère transparence */
+  color: @fg;
+  border: none;
+  font-family: "Hack Nerd Font", monospace; /* Police cohérente */
+  font-size: 11pt;
+}
+
+/* Modules généraux */
+#workspaces button,
+#clock,
+#network,
+#pulseaudio,
+#battery {
+  padding: 6px 10px;          /* Espacement interne */
+  margin: 0 4px;              /* Espace entre modules */
+  border-radius: 8px;         /* Coins arrondis */
+  background: transparent;    /* Par défaut, transparent */
+}
+
+/* Workspaces : actif / occupé / vide */
+#workspaces button.active {
+  background: alpha(@blue, 0.25); /* Workspace actif mis en avant */
+  color: @fg;
+}
+#workspaces button.urgent {
+  background: alpha(@red, 0.25);  /* Workspace urgent en rouge */
+}
+#workspaces button:hover {
+  background: alpha(@cyan, 0.2);  /* Survol */
+}
+
+/* Modules spécifiques */
+#clock { background: alpha(@blue, 0.15); }
+#network { background: alpha(@cyan, 0.15); }
+#pulseaudio { background: alpha(@cyan, 0.15); }
+
+/* Batterie : états */
+#battery.warning { color: @red; }
+#battery.critical { 
+  color: @red;
+  font-weight: bold;
+}

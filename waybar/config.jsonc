@@ -1,0 +1,66 @@
+{
+  // ----- Barres déclarées (ici une seule "top") -----
+  "layer": "top",                 // Place la barre au-dessus des fenêtres
+  "position": "top",              // Barre en haut de l’écran
+  "height": 28,                   // Hauteur en pixels
+  "modules-left": [               // Modules alignés à gauche
+    "hyprland/workspaces"         // Indicateur des workspaces Hyprland
+  ],
+  "modules-center": [             // Modules au centre
+    "clock"                       // Horloge centrale
+  ],
+  "modules-right": [              // Modules à droite
+    "network",                    // Réseau (Wi-Fi/Ethernet)
+    "pulseaudio",                 // Volume audio (PipeWire via compat Pulse)
+    "battery"                     // Batterie (cachée si non présente)
+  ],
+
+  // ----- Module Workspaces (Hyprland) -----
+  "hyprland/workspaces": {
+    "format": "{name}",           // Affiche le nom/numéro du workspace
+    "disable-scroll": false       // Autorise molette pour naviguer
+  },
+
+  // ----- Module Horloge -----
+  "clock": {
+    "format": "{:%a %d %b | %H:%M}", // Format date & heure (ex: mar 02 sep | 21:37)
+    "tooltip": true,                 // Infobulle au survol
+    "tooltip-format": "{:%A %d %B %Y}" // Format de l’infobulle (date complète)
+  },
+
+  // ----- Module Réseau -----
+  "network": {
+    // "interface": "auto",         // Laisse Waybar choisir l’interface par défaut
+    "format-wifi": "  {essid} {signal}%", // Affichage en Wi-Fi
+    "format-ethernet": "  {ipaddr}",      // Affichage en Ethernet
+    "format-disconnected": "  offline",   // Quand pas de réseau
+    "tooltip": true,                       // Infobulle avec détails
+    "interval": 5                          // Rafraîchissement en secondes
+  },
+
+  // ----- Module Audio (PulseAudio / PipeWire) -----
+  "pulseaudio": {
+    "format": "{icon} {volume}%",          // Icône + volume
+    "format-muted": "  muted",            // Quand coupé
+    "on-click": "pavucontrol",             // Clic = ouvre le mixer audio
+    "scroll-step": 3,                      // Pas de volume à la molette
+    "icons": {                             // Icônes selon niveau
+      "high": "",
+      "medium": "",
+      "low": ""
+    }
+  },
+
+  // ----- Module Batterie (caché si non détectée) -----
+  "battery": {
+    "format": "{icon} {capacity}%",        // Icône + % batterie
+    "format-charging": "  {capacity}%",   // En charge
+    "format-plugged": "  {capacity}%",    // Sur secteur
+    "tooltip": true,                      
+    "states": {                             // Seuils d’alerte
+      "warning": 25,
+      "critical": 10
+    },
+    "icons": [ "", "", "", "", "" ]     // 0→100%
+  }
+}

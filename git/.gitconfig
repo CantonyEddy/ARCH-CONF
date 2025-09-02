@@ -1,0 +1,28 @@
+# -------------------------------
+# Configuration principale de Git
+# -------------------------------
+
+[user]
+    name = Eddy Cantony          # Ton nom qui apparaîtra dans les commits
+    email = cantony.eddy@gmail.com # Ton email Git (GitHub/GitLab)
+
+[core]
+    editor = nvim                 # Editeur par défaut (ici Neovim)
+    autocrlf = input              # Gérer les retours à la ligne (important Linux/Windows)
+    pager = less -FRX             # Meilleure pagination (scroll fluide)
+
+[color]
+    ui = auto                     # Activer les couleurs dans Git
+
+[alias]
+    st = status                   # git st → raccourci pour git status
+    co = checkout                 # git co branche
+    br = branch                   # git br → liste des branches
+    cm = commit -m                # git cm "message"
+    lg = log --oneline --graph --decorate --all # joli log
+
+[merge]
+    tool = vimdiff                # outil de merge par défaut
+
+[push]
+    default = simple              # comportement de git push (branch -> origin/branch)

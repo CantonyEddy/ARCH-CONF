@@ -1,0 +1,15 @@
+# ==============================
+# ~/.config/systemd/user/blueman-applet.service
+# Service systemd pour démarrer Blueman Applet
+# ==============================
+
+[Unit]
+Description=Blueman Applet
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/blueman-applet
+Restart=always
+
+[Install]
+WantedBy=default.target
