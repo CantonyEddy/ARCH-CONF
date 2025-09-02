@@ -24,8 +24,8 @@ set smartindent           " Indentation intelligente
 " --- Recherche ---
 set hlsearch              " Met en évidence les résultats
 set incsearch             " Recherche incrémentale
-set ignorecase            " Ignore la casse...
-set smartcase             " ... sauf si majuscules dans la recherche
+set ignorecase            " Ignore la casse
+set smartcase             " sauf si majuscules dans la recherche
 
 " --- Confort ---
 set clipboard=unnamedplus " Utiliser le presse-papier système
